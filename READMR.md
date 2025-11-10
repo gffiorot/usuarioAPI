@@ -1,1 +1,0 @@
-biblioteca com uso de SQLmodel e FastAPI para usos didaticos.
