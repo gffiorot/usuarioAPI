@@ -1,6 +1,6 @@
 # usuarioAPI1103: API de Cadastro de Usuários com Lib Modular
 
-Este projeto demonstra a arquitetura **MVC com Repository** aplicada ao FastAPI, separando a lógica de **dados/serviço** (encapsulada na biblioteca `usuarioAPI1103`) da lógica de **interface web** (Controller/Router na pasta `app`).
+Este projeto demonstra a arquitetura **MVC com Repository** aplicada ao FastAPI, separando a lógica de **dados/serviço** (encapsulada na biblioteca `usuarioAPI1103`) da lógica de **interface web** (Controller/Router na pasta `API`).
 
 -----
 
@@ -15,7 +15,7 @@ Este projeto demonstra a arquitetura **MVC com Repository** aplicada ao FastAPI,
 
 ### 2\. Estrutura do Repositório
 
-Seu projeto principal de execução (`app`) utiliza os componentes da biblioteca instalada.
+Seu projeto principal de execução (`API`) utiliza os componentes da biblioteca instalada.
 
 ```
 .
@@ -41,7 +41,7 @@ Tenha certeza que os requisitos estejam baixados.
 ```bash
 python -m venv .venv
 
-.env\Scripts\Activate     # Linux/macOS: #source .env/bin/activate
+.venv\Scripts\Activate     # Linux/macOS: #source .env/bin/activate
 
 # Instale a Lib e suas dependências
 pip install usuarioAPI1103
@@ -52,7 +52,7 @@ pip install usuarioAPI1103
 <!-- end list -->
 
 ```bash
-# Uvicorn roda o módulo main dentro da pasta 'app'
+# Uvicorn roda o módulo main dentro da pasta 'API'
 uvicorn API.main:app --reload
 ```
 
