@@ -1,6 +1,6 @@
 from fastapi import HTTPException
 from sqlmodel import Session
-from usuarioAPI1103.controller.generic import create_crud_router, Hooks
+from .generic import create_crud_router, Hooks
 from usuarioAPI1103.model.models import Endereco, Pessoa 
 from usuarioAPI1103.model.dto import EnderecoCreate, EnderecoUpdate, EnderecoRead
 

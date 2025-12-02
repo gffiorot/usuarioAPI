@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from usuarioAPI1103.util.database import init_db
-from usuarioAPI1103.controller.pessoa import router as pessoas_router
-from usuarioAPI1103.controller.endereco import router as enderecos_router
+from .controller.pessoa import router as pessoas_router
+from .controller.endereco import router as enderecos_router
 
 app = FastAPI(title="FastAPI + SQLModel - MVC + Repository")
 
@@ -13,3 +13,5 @@ app.include_router(enderecos_router)
 @app.get("/")
 def health():
     return {"status": "ok"}
+
+#Comando para rodar: "uvicorn main:app --reload"
